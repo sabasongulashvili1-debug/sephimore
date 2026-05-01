@@ -76,6 +76,8 @@ export async function storefrontApiRequest(
 ) {
   const isServer = typeof window === "undefined";
 
+console.log("TOKEN:", process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN);
+
   const fetchOptions: RequestInit & { next?: { revalidate: number } } = {
     method: "POST",
     headers: {
@@ -99,7 +101,6 @@ export async function storefrontApiRequest(
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
-
   const data = await response.json();
   if (data.errors) {
     throw new Error(
