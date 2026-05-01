@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme {
+  /* Fonts */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: Inter, system-ui, sans-serif;
+
+  --color-background: hsl(36 33% 97%);
+  --color-foreground: hsl(25 20% 15%);
+
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(25 20% 15%);
+
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(25 20% 15%);
+
+  --color-primary: hsl(36 45% 52%);
+  --color-primary-foreground: hsl(36 33% 97%);
+
+  --color-secondary: hsl(30 20% 92%);
+  --color-secondary-foreground: hsl(25 20% 15%);
+
+  --color-muted: hsl(30 15% 94%);
+  --color-muted-foreground: hsl(25 10% 42%);
+
+  --color-accent: hsl(36 45% 52%);
+  --color-accent-foreground: hsl(36 33% 97%);
+
+  --color-destructive: hsl(0 70% 50%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+
+  --color-border: hsl(30 15% 88%);
+  --color-input: hsl(30 15% 88%);
+  --color-ring: hsl(36 45% 52%);
+
+  --color-sidebar: hsl(0 0% 98%);
+  --color-sidebar-foreground: hsl(240 5.3% 26.1%);
+  --color-sidebar-primary: hsl(240 5.9% 10%);
+  --color-sidebar-primary-foreground: hsl(0 0% 98%);
+  --color-sidebar-accent: hsl(240 4.8% 95.9%);
+  --color-sidebar-accent-foreground: hsl(240 5.9% 10%);
+  --color-sidebar-border: hsl(220 13% 91%);
+  --color-sidebar-ring: hsl(217.2 91.2% 59.8%);
+
+  /* Border radius */
+  --radius-lg: 0.25rem;
+  --radius-md: calc(0.25rem - 2px);
+  --radius-sm: calc(0.25rem - 4px);
+
+  /* Shadows */
+  --shadow-soft: 0 8px 30px -12px hsl(25 20% 15% / 0.12);
+  --shadow-luxe: 0 20px 50px -20px hsl(36 45% 52% / 0.35);
+
+  /* Gradients */
+  --gradient-gold: linear-gradient(135deg, hsl(40 60% 70%), hsl(36 45% 52%));
+  --gradient-fade: linear-gradient(180deg, hsl(36 33% 97% / 0), hsl(36 33% 97%));
+
+  /* Keyframes */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+  }
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .tracking-luxury {
+    letter-spacing: 0.2em;
+  }
+  .bg-gradient-gold {
+    background-image: var(--gradient-gold);
+  }
+  .bg-gradient-fade {
+    background-image: var(--gradient-fade);
+  }
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  .shadow-luxe {
+    box-shadow: var(--shadow-luxe);
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  max-width: 1400px;
+}
