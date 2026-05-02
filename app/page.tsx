@@ -11,11 +11,11 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "Saphimère — Fine Jewelry, Crafted to Treasure",
+  title: "Sephimère — Fine Jewelry, Crafted to Treasure",
   description:
     "Heirloom-quality fine jewelry. Discover handcrafted necklaces, rings, and earrings made to be worn every day.",
   openGraph: {
-    title: "Saphimère — Fine Jewelry, Crafted to Treasure",
+    title: "Sephimère — Fine Jewelry, Crafted to Treasure",
     description: "Heirloom-quality fine jewelry. Handcrafted necklaces, rings, and earrings.",
     type: "website",
   },
@@ -100,7 +100,7 @@ export default async function HomePage() {
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
                 src="/assets/atelier.jpg"
-                alt="Jeweler hand-finishing a gold ring at the Saphimère atelier"
+                alt="Jeweler hand-finishing a gold ring at the Sephimère atelier"
                 fill
                 loading="lazy"
                 className="object-cover"
@@ -112,7 +112,7 @@ export default async function HomePage() {
                 A house built on <em className="text-gradient-gold not-italic">quiet luxury</em>.
               </h2>
               <div className="space-y-5 text-muted-foreground leading-relaxed">
-                <p>Saphimère began with a single ring — slipped onto a finger and never taken off again. That feeling, of a piece becoming part of you, is the standard we hold every design to.</p>
+                <p>Sephimère began with a single ring — slipped onto a finger and never taken off again. That feeling, of a piece becoming part of you, is the standard we hold every design to.</p>
                 <p>Founded in 2019, our small atelier brings together master goldsmiths and stone-setters who have spent decades perfecting their craft. Every piece is made by hand in limited runs, with the same care once reserved for heirloom commissions.</p>
                 <p>We believe jewelry should be intimate, not loud. Worn in the morning, in the shower, on a wedding day, on a quiet Tuesday. Made to outlast trends — and us.</p>
               </div>
@@ -160,7 +160,7 @@ export default async function HomePage() {
             </div>
             <div className="grid md:grid-cols-3 gap-10 md:gap-16">
               {[
-                { q: "I haven't taken off my Saphimère ring since the day it arrived. It feels like it was always mine.", n: "Camille R.", c: "Paris" },
+                { q: "I haven't taken off my Sephimère ring since the day it arrived. It feels like it was always mine.", n: "Camille R.", c: "Paris" },
                 { q: "The craftsmanship is extraordinary. You can feel the hours of work in the smallest details.", n: "Sofia M.", c: "Milan" },
                 { q: "Quiet, beautiful, and built to last. Exactly the kind of jewelry I'd been looking for for years.", n: "Eleanor K.", c: "London" },
               ].map((t) => (
@@ -209,10 +209,10 @@ export default async function HomePage() {
             <div className="divide-y divide-border/60 border-y border-border/60">
               {[
                 { q: "Is your jewelry made of solid gold?", a: "Yes — every piece is solid 14k or 18k recycled gold. We never plate or fill. The metal you see is the same all the way through." },
-                { q: "Can I wear my pieces every day?", a: "Absolutely. Saphimère is designed for everyday wear — in the shower, swimming, sleeping. Solid gold and properly set stones are made for life." },
+                { q: "Can I wear my pieces every day?", a: "Absolutely. Sephimère is designed for everyday wear — in the shower, swimming, sleeping. Solid gold and properly set stones are made for life." },
                 { q: "How long does shipping take?", a: "Most pieces ship within 2–3 business days. Made-to-order designs take 2–3 weeks. Worldwide shipping is complimentary on orders over $250." },
                 { q: "What if I need a different size?", a: "Free resizing within the first year on most rings. Just write to us — we'll send a prepaid label and return your piece resized in about two weeks." },
-                { q: "Do you offer repairs?", a: "Yes. Every Saphimère piece is backed by a lifetime craftsmanship guarantee. Cleaning and repair of manufacturing defects is always free." },
+                { q: "Do you offer repairs?", a: "Yes. Every Sephimère piece is backed by a lifetime craftsmanship guarantee. Cleaning and repair of manufacturing defects is always free." },
               ].map((f) => (
                 <details key={f.q} className="group py-6">
                   <summary className="flex items-center justify-between cursor-pointer list-none">
@@ -240,8 +240,8 @@ export default async function HomePage() {
             <NewsletterForm />
             <p className="text-xs text-muted-foreground mt-6">
               Or write to us directly at{" "}
-              <a href="mailto:hello@saphimere.com" className="text-foreground hover:text-primary transition-colors underline underline-offset-4">
-                hello@saphimere.com
+              <a href="mailto:hello@sephimere.com" className="text-foreground hover:text-primary transition-colors underline underline-offset-4">
+                hello@sephimere.com
               </a>
             </p>
           </div>

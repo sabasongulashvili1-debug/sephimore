@@ -31,7 +31,7 @@ const CONTENT: Record<string, LegalContent> = {
       },
       {
         heading: "Your Rights",
-        body: ["You may request access to, correction of, or deletion of your personal data at any time. To exercise these rights, write to hello@saphimere.co."],
+        body: ["You may request access to, correction of, or deletion of your personal data at any time. To exercise these rights, write to hello@sephimere.co."],
       },
       {
         heading: "Cookies",
@@ -41,7 +41,7 @@ const CONTENT: Record<string, LegalContent> = {
   },
   terms: {
     title: "Terms of Service",
-    intro: "These terms govern your use of saphimere.co and the purchase of any pieces from our collection. By placing an order, you agree to the terms outlined below.",
+    intro: "These terms govern your use of sephimere.co and the purchase of any pieces from our collection. By placing an order, you agree to the terms outlined below.",
     sections: [
       {
         heading: "Orders & Acceptance",
@@ -56,17 +56,17 @@ const CONTENT: Record<string, LegalContent> = {
       },
       {
         heading: "Intellectual Property",
-        body: ["All content on this site — including imagery, designs, and text — is the property of Saphimère and may not be reproduced without written consent."],
+        body: ["All content on this site — including imagery, designs, and text — is the property of Sephimère and may not be reproduced without written consent."],
       },
       {
         heading: "Limitation of Liability",
-        body: ["To the fullest extent permitted by law, Saphimère shall not be liable for any indirect, incidental, or consequential damages arising from the use of our products or website."],
+        body: ["To the fullest extent permitted by law, Sephimère shall not be liable for any indirect, incidental, or consequential damages arising from the use of our products or website."],
       },
     ],
   },
   shipping: {
     title: "Shipping Policy",
-    intro: "Each Saphimère piece is prepared, inspected, and packaged by hand. We ship worldwide with fully insured, signature-required couriers.",
+    intro: "Each Sephimère piece is prepared, inspected, and packaged by hand. We ship worldwide with fully insured, signature-required couriers.",
     sections: [
       {
         heading: "Processing Time",
@@ -91,7 +91,7 @@ const CONTENT: Record<string, LegalContent> = {
   },
   refund: {
     title: "Refund Policy",
-    intro: "We want every Saphimère piece to feel exactly right. If it doesn't, we are happy to offer a return or exchange under the following conditions.",
+    intro: "We want every Sephimère piece to feel exactly right. If it doesn't, we are happy to offer a return or exchange under the following conditions.",
     sections: [
       {
         heading: "Return Window",
@@ -103,7 +103,7 @@ const CONTENT: Record<string, LegalContent> = {
       },
       {
         heading: "How to Initiate a Return",
-        body: ["Write to hello@saphimere.co with your order number and reason for return. We will respond within one business day with a prepaid return label and instructions."],
+        body: ["Write to hello@sephimere.co with your order number and reason for return. We will respond within one business day with a prepaid return label and instructions."],
       },
       {
         heading: "Refund Processing",
@@ -111,7 +111,7 @@ const CONTENT: Record<string, LegalContent> = {
       },
       {
         heading: "Lifetime Care",
-        body: ["Beyond the return window, every Saphimère piece is covered by our complimentary lifetime cleaning and tightening service. Repairs from wear are offered at cost."],
+        body: ["Beyond the return window, every Sephimère piece is covered by our complimentary lifetime cleaning and tightening service. Repairs from wear are offered at cost."],
       },
     ],
   },
@@ -122,7 +122,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const content = CONTENT[slug];
   if (!content) return {};
   return {
-    title: `${content.title} — Saphimère`,
+    title: `${content.title} — Sephimère`,
   };
 }
 
@@ -142,7 +142,7 @@ export default async function LegalPage({ params }: { params: Promise<{ slug: st
       <main className="flex-1">
         <article className="container max-w-3xl py-20 md:py-28">
           <p className="text-xs tracking-luxury uppercase text-muted-foreground mb-4">
-            <Link href="/" className="hover:text-primary transition-colors">Saphimère</Link>
+            <Link href="/" className="hover:text-primary transition-colors">Sephimère</Link>
             <span className="mx-2">/</span>
             <span>Legal</span>
           </p>
@@ -162,7 +162,7 @@ export default async function LegalPage({ params }: { params: Promise<{ slug: st
           </div>
           <p className="text-xs text-muted-foreground mt-16">
             Last updated {new Date().toLocaleDateString("en-US", { month: "long", year: "numeric" })}. Questions? Write to{" "}
-            <a href="mailto:hello@saphimere.co" className="underline hover:text-primary">hello@saphimere.co</a>.
+            <a href="mailto:hello@sephimere.co" className="underline hover:text-primary">hello@sephimere.co</a>.
           </p>
         </article>
       </main>

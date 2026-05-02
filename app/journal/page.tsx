@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 import { ARTICLES } from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "Journal — Saphimère",
-  description: "Notes from the Saphimère atelier — care guides, styling, and sourcing stories.",
+  title: "Journal — Sephimère",
+  description: "Notes from the Sephimère atelier — care guides, styling, and sourcing stories.",
 };
 
 export default function JournalPage() {

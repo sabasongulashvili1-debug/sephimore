@@ -14,7 +14,7 @@ export const Header = () => {
         </div>
         <Link href="/" className="flex-1  md:flex-none text-start md:px-4">
           <span className="font-serif text-2xl md:text-3xl tracking-wide whitespace-nowrap">
-            Saphim<em className="text-gradient-gold not-italic">è</em>re
+            Sephim<em className="text-gradient-gold not-italic">è</em>re
           </span>
         </Link>
         <div className="flex-1 flex justify-end items-center gap-2">
