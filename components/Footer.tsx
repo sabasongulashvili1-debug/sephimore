@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="container py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <h3 className="font-serif text-2xl mb-3">
-            Saphim<em className="text-gradient-gold not-italic">è</em>re
+            Sephim<em className="text-gradient-gold not-italic">è</em>re
           </h3>
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
             Heirloom-quality fine jewelry, crafted to be worn every day and treasured for a lifetime.
@@ -33,7 +33,7 @@ export const Footer = () => {
       </div>
       <div className="border-t border-border/60">
         <div className="container py-6 text-xs text-muted-foreground flex flex-col md:flex-row justify-between gap-3">
-          <span>© {new Date().getFullYear()} Saphimère. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Sephimère. All rights reserved.</span>
           <div className="flex gap-5">
             <Link href="/legal/privacy" className="hover:text-primary transition-colors">Privacy</Link>
             <Link href="/legal/terms" className="hover:text-primary transition-colors">Terms</Link>
