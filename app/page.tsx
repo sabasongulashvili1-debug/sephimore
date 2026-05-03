@@ -42,7 +42,7 @@ export default async function HomePage() {
           <div className="grid md:grid-cols-2 min-h-[80vh]">
             <div className="flex flex-col justify-center px-8 md:px-16 py-20 order-2 md:order-1">
               <span className="text-xs tracking-luxury uppercase text-primary mb-6">New Collection</span>
-              <h1 className="font-serif text-5xl md:text-7xl leading-[1.05] mb-6">
+              <h1 className="font-serif text-5xl md:text-7xl leading-[1.05] mb-0">
                 Pieces that<br />
                 <em className="text-gradient-gold not-italic">whisper</em><br />
                 forever.

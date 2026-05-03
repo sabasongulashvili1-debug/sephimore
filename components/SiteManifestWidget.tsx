@@ -14,7 +14,7 @@ export function SiteManifestWidget() {
       domain="sephimere.com"
       layout="banner"
       theme="light-transparent"
-      scale="1.0"
+      scale="1.1"
       shadow="false"
       border="false"
       nav-bg="#000000"
