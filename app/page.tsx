@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { ARTICLES } from "@/lib/articles";
 import Link from "next/link";
-
+import { SiteManifestWidget } from "@/components/SiteManifestWidget";
 
 export const metadata: Metadata = {
   title: "Sephimère — Fine Jewelry, Crafted to Treasure",
@@ -47,6 +47,7 @@ export default async function HomePage() {
                 <em className="text-gradient-gold not-italic">whisper</em><br />
                 forever.
               </h1>
+               <SiteManifestWidget />
               <p className="text-muted-foreground max-w-md mb-10 leading-relaxed">
                 Quietly luxurious. Endlessly wearable. Each piece is hand-finished in our atelier
                 from solid gold and ethically sourced stones.
