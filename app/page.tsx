@@ -47,7 +47,7 @@ export default async function HomePage() {
                 <em className="text-gradient-gold not-italic">whisper</em><br />
                 forever.
               </h1>
-               <SiteManifestWidget />
+               <SiteManifestWidget layout="banner" align="left" scale="1.2" border="false"/>
               <p className="text-muted-foreground max-w-md mb-10 leading-relaxed">
                 Quietly luxurious. Endlessly wearable. Each piece is hand-finished in our atelier
                 from solid gold and ethically sourced stones.
@@ -160,17 +160,7 @@ export default async function HomePage() {
               <h2 className="font-serif text-4xl md:text-5xl">In their words.</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-10 md:gap-16">
-              {[
-                { q: "I haven't taken off my Sephimère ring since the day it arrived. It feels like it was always mine.", n: "Camille R.", c: "Paris" },
-                { q: "The craftsmanship is extraordinary. You can feel the hours of work in the smallest details.", n: "Sofia M.", c: "Milan" },
-                { q: "Quiet, beautiful, and built to last. Exactly the kind of jewelry I'd been looking for for years.", n: "Eleanor K.", c: "London" },
-              ].map((t) => (
-                <figure key={t.n} className="text-center">
-                  <div className="text-gradient-gold font-serif text-4xl mb-4 leading-none">"</div>
-                  <blockquote className="font-serif text-lg italic leading-relaxed mb-6 text-background/90">{t.q}</blockquote>
-                  <figcaption className="text-xs tracking-luxury uppercase text-background/60">{t.n} — {t.c}</figcaption>
-                </figure>
-              ))}
+             <SiteManifestWidget layout="carousel" border="true" align="center" scale="1.0"/>
             </div>
           </div>
         </section>
