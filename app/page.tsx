@@ -159,8 +159,8 @@ export default async function HomePage() {
               <span className="text-xs tracking-luxury uppercase text-primary mb-3 block">Worn & Loved</span>
               <h2 className="font-serif text-4xl md:text-5xl">In their words.</h2>
             </div>
-            <div className="grid md:grid-cols-3 gap-10 md:gap-16">
-             <SiteManifestWidget layout="carousel" border="true" align="center" scale="1.0"/>
+            <div className="w-full ">
+             <SiteManifestWidget layout="carousel" theme="light" border="true" align="center" scale="0.9"/>
             </div>
           </div>
         </section>

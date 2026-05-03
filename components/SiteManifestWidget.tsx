@@ -6,13 +6,16 @@ interface SiteManifestWidgetProps {
   border?: "true" | "false";
   align?: "left" | "center" | "right";
   scale?: "1.0" | "1.2";
+  theme?: "light-transparent" | "dark-transparent" | "light" | "dark";
 }
 
 export function SiteManifestWidget({ 
   layout, 
   border = "false",
   align = "left",
-  scale = "1.0"
+  scale = "1.0",
+  theme = "light-transparent"
+  
 }: SiteManifestWidgetProps) {
   useEffect(() => {
     if (document.querySelector('script[src="https://sitemanifest.com/sitemanifest.js"]')) return;
@@ -26,7 +29,7 @@ export function SiteManifestWidget({
     <sitemanifest-widget
       domain="sephimere.com"
       layout={layout}
-      theme="light-transparent"
+      theme={theme}
       scale={scale}
       shadow="false"
       border={border}
