@@ -160,7 +160,7 @@ export default async function HomePage() {
               <h2 className="font-serif text-4xl md:text-5xl">In their words.</h2>
             </div>
             <div className="w-full ">
-             <SiteManifestWidget layout="carousel" theme="light" border="true" align="center" scale="0.9"/>
+             <SiteManifestWidget layout="carousel" theme="dark" border="true" align="center" scale="1"/>
             </div>
           </div>
         </section>
