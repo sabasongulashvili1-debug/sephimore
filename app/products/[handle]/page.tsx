@@ -46,7 +46,7 @@ export async function generateMetadata({
   const product = await getProduct(handle);
   if (!product) return {};
   return {
-    title: `${product.title} — Saphimère`,
+    title: `${product.title} — Sephimère`,
     description: product.description,
     openGraph: {
       title: product.title,

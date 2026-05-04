@@ -13,7 +13,7 @@ type LegalContent = {
 const CONTENT: Record<string, LegalContent> = {
   privacy: {
     title: "Privacy Policy",
-    intro: "At Saphimère, we are committed to protecting the privacy of every person who visits our atelier, online or otherwise. This policy explains what information we collect, how we use it, and the choices you have.",
+    intro: "At Sephimère, we are committed to protecting the privacy of every person who visits our atelier, online or otherwise. This policy explains what information we collect, how we use it, and the choices you have.",
     sections: [
       {
         heading: "Information We Collect",
@@ -85,7 +85,7 @@ const CONTENT: Record<string, LegalContent> = {
       },
       {
         heading: "Tracking",
-        body: ["A tracking number is sent by email as soon as your order is dispatched. If you do not receive it within the expected window, please contact hello@saphimere.co."],
+        body: ["A tracking number is sent by email as soon as your order is dispatched. If you do not receive it within the expected window, please contact hello@sephimere.co."],
       },
     ],
   },
