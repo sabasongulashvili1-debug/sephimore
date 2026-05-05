@@ -153,7 +153,7 @@ export default async function HomePage() {
         </section>
 
         {/* Testimonials */}
-        <section className="bg-foreground text-background py-24 md:py-32">
+        <section className="bg-foreground text-background py-[12px] xl:py-32">
           <div className="container">
             <div className="text-center mb-16">
               <span className="text-xs tracking-luxury uppercase text-primary mb-3 block">Worn & Loved</span>

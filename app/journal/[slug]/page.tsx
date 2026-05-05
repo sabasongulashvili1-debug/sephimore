@@ -15,7 +15,7 @@ export async function generateMetadata({
   const article = ARTICLES.find((a) => a.slug === slug);
   if (!article) return {};
   return {
-    title: `${article.title} — Saphimère Journal`,
+    title: `${article.title} — Sephimère Journal`,
     description: article.excerpt,
   };
 }
