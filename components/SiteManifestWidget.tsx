@@ -33,8 +33,8 @@ export function SiteManifestWidget({
       scale={scale}
       shadow="false"
       border={border}
-      nav-bg="#FFFFFF"
-      nav-color="#3232323"
+      nav-bg="#000000"
+      nav-color="#FFFFFF"
       nav-size="44"
       align={align}
     />
