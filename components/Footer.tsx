@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="container py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <h3 className="font-serif text-2xl mb-3">
-            Sephim<em className="text-gradient-gold not-italic">è</em>re
+           Và‧ra Sephim<em className="text-gradient-gold not-italic">è</em>re
           </h3>
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
             Heirloom-quality fine jewelry, crafted to be worn every day and treasured for a lifetime.

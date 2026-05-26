@@ -54,7 +54,7 @@ export const ARTICLES: Article[] = [
     body: [
       "We flew into Colombo on a Tuesday and drove south through tea country to Ratnapura — the City of Gems. It is exactly what it sounds like: a small town built on top of one of the richest gemstone deposits in the world, where families have been mining sapphires by hand for generations.",
       "Our partners there run a single shaft mine that has been in the same family for four generations. The work is slow, careful, and almost entirely manual. Gravel is brought up in baskets, washed in shallow streams, and sorted by eye on woven mats.",
-      "We visit twice a year. Not because we have to, but because it's the only way to know what you're buying. We sit on the floor with the sorters, look at every parcel, and choose the stones we want one by one. The ones that don't make it into Saphimère pieces stay there — sold locally, re-cut, or set aside for the next visit.",
+      "We visit twice a year. Not because we have to, but because it's the only way to know what you're buying. We sit on the floor with the sorters, look at every parcel, and choose the stones we want one by one. The ones that don't make it into Sephimère pieces stay there — sold locally, re-cut, or set aside for the next visit.",
       "It's a slower way to source gemstones, and it costs more. But it means we can tell you exactly which valley your sapphire came from, who pulled it out of the ground, and that they were paid fairly for their work.",
       "There are larger, faster supply chains. We are not interested in them. The pieces we make are meant to last several lifetimes — the least we can do is make sure the start of their story is one we're proud to tell.",
     ],

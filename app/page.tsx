@@ -114,7 +114,8 @@ export default async function HomePage() {
               </h2>
               <div className="space-y-5 text-muted-foreground leading-relaxed">
                 <p>Sephimère began with a single ring — slipped onto a finger and never taken off again. That feeling, of a piece becoming part of you, is the standard we hold every design to.</p>
-                <p>Founded in 2019, our small atelier brings together master goldsmiths and stone-setters who have spent decades perfecting their craft. Every piece is made by hand in limited runs, with the same care once reserved for heirloom commissions.</p>
+                <p>Founded in 2019, the small atelier brought together master goldsmiths and stone-setters who have spent decades perfecting their craft. Every piece is made by hand in limited runs, with the same care once reserved for heirloom commissions.</p>
+                <p>In 2026 The Vara Jewelers family, active goldsmith jewlers in Sardinia since the early 1400's, acquired Sephimère to expand Và‧ra Jewelers</p>
                 <p>We believe jewelry should be intimate, not loud. Worn in the morning, in the shower, on a wedding day, on a quiet Tuesday. Made to outlast trends — and us.</p>
               </div>
               <div className="grid grid-cols-3 gap-6 mt-12 pt-10 border-t border-border/60">
@@ -138,7 +139,7 @@ export default async function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border/60">
             {[
-              { n: "01", t: "Solid Gold", d: "14k and 18k recycled gold throughout. No plating, no filling — what you see is what it is, all the way through." },
+              { n: "01", t: "Solid Gold", d: "14k, 18k and 24k recycled gold throughout. No plating, no filling — what you see is what it is, all the way through." },
               { n: "02", t: "Ethically Sourced", d: "Conflict-free diamonds and traceable gemstones from partners we visit, know by name, and trust completely." },
               { n: "03", t: "Hand-Finished", d: "Every clasp soldered, every stone set, every surface polished by hand in small batches in our atelier." },
               { n: "04", t: "Made to Last", d: "A lifetime craftsmanship guarantee. Free cleaning and repair, because heirlooms should outlive us." },
