@@ -50,7 +50,7 @@ export const AboutSection = () => {
           </button>
 
           <div className="grid grid-cols-3 gap-6 mt-12 pt-10 border-t border-border/60">
-            {[["2019", "Founded"], ["24k", "Solid gold"], ["100%", "Hand-finished"]].map(([val, label]) => (
+            {[["2019", "Founded"], ["24k", "Solid gold"], ["100%", "Custom Hand-Made"]].map(([val, label]) => (
               <div key={label}>
                 <div className="font-serif text-3xl text-gradient-gold mb-1">{val}</div>
                 <div className="text-xs tracking-luxury uppercase text-muted-foreground">{label}</div>
