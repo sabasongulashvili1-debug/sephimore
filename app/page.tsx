@@ -186,11 +186,11 @@ export default async function HomePage() {
             </div>
             <div className="divide-y divide-border/60 border-y border-border/60">
               {[
-                { q: "Is your jewelry made of solid gold?", a: "Yes — every piece is solid 14k, 18k or 24k recycled gold. We never plate or fill. The metal you see is the same all the way through." },
+                { q: "Is your jewelry made of solid gold?", a: "Yes, every piece is solid 24k recycled gold or pure platinum. We never plate or fill. The metal you see is the same all the way through." },
                 { q: "Can I wear my pieces every day?", a: "Absolutely. Sephimère is designed for everyday wear — in the shower, swimming, sleeping. Solid gold and properly set stones are made for life." },
                 { q: "How long does shipping take?", a: "Most pieces ship within 2–3 business days. Made-to-order designs take 2–3 weeks. Worldwide shipping is complimentary on orders over $250." },
                 { q: "What if I need a different size?", a: "Free resizing within the first year on most rings. Just write to us — we'll send a prepaid label and return your piece resized in about two weeks." },
-                { q: "Do you offer repairs?", a: "Yes. Every Vara Sephimère piece is backed by a lifetime craftsmanship guarantee. Cleaning and repair of manufacturing defects is always free." },
+                { q: "Do you offer repairs?", a: "Yes. Every Vara jewelry piece is backed by a lifetime craftsmanship guarantee. Cleaning and repair of manufacturing defects is always free." },
               ].map((f) => (
                 <details key={f.q} className="group py-6">
                   <summary className="flex items-center justify-between cursor-pointer list-none">
