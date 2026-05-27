@@ -9,17 +9,19 @@ import Image from "next/image";
 import { ARTICLES } from "@/lib/articles";
 import Link from "next/link";
 import { SiteManifestWidget } from "@/components/SiteManifestWidget";
+import { AboutSection } from "@/components/about-section";
 
 export const metadata: Metadata = {
-  title: "Sephimère — Fine Jewelry, Crafted to Treasure",
+  title: "Vara Sephimère — Fine Jewelry, Crafted to Treasure",
   description:
     "Heirloom-quality fine jewelry. Discover handcrafted necklaces, rings, and earrings made to be worn every day.",
   openGraph: {
-    title: "Sephimère — Fine Jewelry, Crafted to Treasure",
+    title: "Vara Sephimère — Fine Jewelry, Crafted to Treasure",
     description: "Heirloom-quality fine jewelry. Handcrafted necklaces, rings, and earrings.",
     type: "website",
   },
 };
+
 
 async function getProducts(): Promise<ShopifyProduct[]> {
   try {
@@ -96,62 +98,46 @@ export default async function HomePage() {
         </section>
 
         {/* About */}
-        <section id="about" className="bg-secondary/40 py-24 md:py-32">
-          <div className="container grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-            <div className="relative aspect-[4/5] overflow-hidden">
-              <Image
-                src="/assets/atelier.jpg"
-                alt="Jeweler hand-finishing a gold ring at the Sephimère atelier"
-                fill
-                loading="lazy"
-                className="object-cover"
-              />
-            </div>
-            <div>
-              <span className="text-xs tracking-luxury uppercase text-primary mb-4 block">Our Story</span>
-              <h2 className="font-serif text-4xl md:text-5xl mb-8 leading-tight">
-                A house built on <em className="text-gradient-gold not-italic">quiet luxury</em>.
-              </h2>
-              <div className="space-y-5 text-muted-foreground leading-relaxed">
-                <p>Sephimère began with a single ring — slipped onto a finger and never taken off again. That feeling, of a piece becoming part of you, is the standard we hold every design to.</p>
-                <p>Founded in 2019, the small atelier brought together master goldsmiths and stone-setters who have spent decades perfecting their craft. Every piece is made by hand in limited runs, with the same care once reserved for heirloom commissions.</p>
-                <p>In 2026 The Vara Jewelers family, active goldsmith jewlers in Sardinia since the early 1400's, acquired Sephimère to expand Và‧ra Jewelers</p>
-                <p>We believe jewelry should be intimate, not loud. Worn in the morning, in the shower, on a wedding day, on a quiet Tuesday. Made to outlast trends — and us.</p>
-              </div>
-              <div className="grid grid-cols-3 gap-6 mt-12 pt-10 border-t border-border/60">
-                {[["2019", "Founded"], ["14k", "Solid gold"], ["100%", "Hand-finished"]].map(([val, label]) => (
-                  <div key={label}>
-                    <div className="font-serif text-3xl text-gradient-gold mb-1">{val}</div>
-                    <div className="text-xs tracking-luxury uppercase text-muted-foreground">{label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
+        <AboutSection />
         {/* Craft / Values */}
-        <section id="craft" className="container py-24 md:py-32">
-          <div className="text-center mb-16 max-w-2xl mx-auto">
-            <span className="text-xs tracking-luxury uppercase text-primary mb-3 block">The Craft</span>
-            <h2 className="font-serif text-4xl md:text-5xl mb-6">Made slowly. Worn forever.</h2>
-            <p className="text-muted-foreground leading-relaxed">Four principles guide every piece that leaves the atelier.</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border/60">
-            {[
-              { n: "01", t: "Solid Gold", d: "14k, 18k and 24k recycled gold throughout. No plating, no filling — what you see is what it is, all the way through." },
-              { n: "02", t: "Ethically Sourced", d: "Conflict-free diamonds and traceable gemstones from partners we visit, know by name, and trust completely." },
-              { n: "03", t: "Hand-Finished", d: "Every clasp soldered, every stone set, every surface polished by hand in small batches in our atelier." },
-              { n: "04", t: "Made to Last", d: "A lifetime craftsmanship guarantee. Free cleaning and repair, because heirlooms should outlive us." },
-            ].map((v) => (
-              <div key={v.n} className="bg-background p-10">
-                <div className="font-serif text-sm text-primary mb-6">{v.n}</div>
-                <h3 className="font-serif text-2xl mb-4">{v.t}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{v.d}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+<section id="craft" className="container py-24 md:py-32">
+  <div className="text-center mb-16 max-w-2xl mx-auto">
+    <span className="text-xs tracking-luxury uppercase text-primary mb-3 block">The Craft</span>
+    <h2 className="font-serif text-4xl md:text-5xl mb-6">Made slowly. Worn forever.</h2>
+    <p className="text-muted-foreground leading-relaxed">Five Guarantees that accompanies every piece that leaves the atelier.</p>
+  </div>
+
+  <div className="border border-border/60">
+    {/* Row 1: 3 items */}
+    <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-border/60">
+      {[
+        { n: "01", t: "Guaranteed Purity", d: "Every piece is crafted from 99.99% fine gold or platinum and hallmarked for purity, gram weight and maker." },
+        { n: "02", t: "Timeless Quality", d: "Hypoallergenic, antimicrobial, and naturally resistant to oxidation or discoloration." },
+        { n: "03", t: "Sustainably Crafted", d: "Consciously and environmentally friendly made." },
+      ].map((v) => (
+        <div key={v.n} className="bg-background p-10">
+          <div className="font-serif text-sm text-primary mb-6">{v.n}</div>
+          <h3 className="font-serif text-2xl mb-4">{v.t}</h3>
+          <p className="text-sm text-muted-foreground leading-relaxed">{v.d}</p>
+        </div>
+      ))}
+    </div>
+
+    {/* Row 2: 2 items centered */}
+    <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-border/60 border-t border-border/60 md:mx-auto md:max-w-[66.666%]">
+      {[
+        { n: "04", t: "Certified Value", d: "Accompanied by an official Certificate of Authenticity." },
+        { n: "05", t: "Liquid Jewelry", d: "Sold strictly by gram weight to allow investment grade jewelry to be objectively valued worldwide using the international standard gold price." },
+      ].map((v) => (
+        <div key={v.n} className="bg-background p-10">
+          <div className="font-serif text-sm text-primary mb-6">{v.n}</div>
+          <h3 className="font-serif text-2xl mb-4">{v.t}</h3>
+          <p className="text-sm text-muted-foreground leading-relaxed">{v.d}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* Testimonials */}
         <section className="bg-foreground text-background py-[12px] xl:py-32">
@@ -200,11 +186,11 @@ export default async function HomePage() {
             </div>
             <div className="divide-y divide-border/60 border-y border-border/60">
               {[
-                { q: "Is your jewelry made of solid gold?", a: "Yes — every piece is solid 14k or 18k recycled gold. We never plate or fill. The metal you see is the same all the way through." },
+                { q: "Is your jewelry made of solid gold?", a: "Yes — every piece is solid 14k, 18k or 24k recycled gold. We never plate or fill. The metal you see is the same all the way through." },
                 { q: "Can I wear my pieces every day?", a: "Absolutely. Sephimère is designed for everyday wear — in the shower, swimming, sleeping. Solid gold and properly set stones are made for life." },
                 { q: "How long does shipping take?", a: "Most pieces ship within 2–3 business days. Made-to-order designs take 2–3 weeks. Worldwide shipping is complimentary on orders over $250." },
                 { q: "What if I need a different size?", a: "Free resizing within the first year on most rings. Just write to us — we'll send a prepaid label and return your piece resized in about two weeks." },
-                { q: "Do you offer repairs?", a: "Yes. Every Sephimère piece is backed by a lifetime craftsmanship guarantee. Cleaning and repair of manufacturing defects is always free." },
+                { q: "Do you offer repairs?", a: "Yes. Every Vara Sephimère piece is backed by a lifetime craftsmanship guarantee. Cleaning and repair of manufacturing defects is always free." },
               ].map((f) => (
                 <details key={f.q} className="group py-6">
                   <summary className="flex items-center justify-between cursor-pointer list-none">
