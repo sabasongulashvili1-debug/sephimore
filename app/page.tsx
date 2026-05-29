@@ -204,8 +204,70 @@ export default async function HomePage() {
           </div>
         </section>
 
+          <section id="repurpose" className="bg-background py-24 md:py-32">
+      <div className="container max-w-5xl">
+ 
+        {/* Header */}
+        <div className="text-center mb-16 max-w-2xl mx-auto">
+          <span className="text-xs tracking-luxury uppercase text-primary mb-3 block">Give Gold a New Life</span>
+          <h2 className="font-serif text-4xl md:text-5xl mb-6">Your gold, reimagined.</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Many customers bring us damaged, old, or inherited pieces — and we love helping transform them into something new and treasured.
+          </p>
+        </div>
+ 
+        {/* Options Grid */}
+        <div className="border border-border/60">
+ 
+          {/* Row 1: 3 items */}
+          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-border/60">
+            {[
+              {
+                n: "01",
+                t: "Full Redesign",
+                d: "Melt it down and create something entirely new and unique. This is the most transformative option — your gold, your vision.",
+              },
+              {
+                n: "02",
+                t: "Investment Grade Bullion",
+                d: "Melt it down to 24k gold or pure platinum in fractional grams to single troy ounce rounds or bars, properly identifiable for trading.",
+              },
+              {
+                n: "03",
+                t: "Jewellery Shot",
+                d: "Melt it down into small workable pellets used by jewelers in pre-production. A smart holding form stored securely with identified purity and weight.",
+              },
+            ].map((v) => (
+              <div key={v.n} className="bg-background p-10">
+                <div className="font-serif text-sm text-primary mb-6">{v.n}</div>
+                <h3 className="font-serif text-2xl mb-4">{v.t}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{v.d}</p>
+              </div>
+            ))}
+          </div>
+ 
+          {/* CTA Row */}
+          <div className="border-t border-border/60 p-10 bg-secondary/30 text-center">
+            <p className="font-serif text-xl md:text-2xl italic text-foreground/80 mb-6 max-w-2xl mx-auto leading-relaxed">
+              "Ready to give your gold a new life?"
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-8">
+              If you have gold that you would like to rework into something new, book a free consultation with us to discuss your ideas. The free consultation can be virtual or in-person in our atelier, during which we can test your gold, discuss your design, answer any questions you have, and provide guidance on pricing.
+            </p>
+            <a
+              href="mailto:hello@sephimere.com"
+              className="inline-block text-xs tracking-luxury uppercase border-b border-foreground/40 pb-1 hover:text-primary hover:border-primary transition-colors"
+            >
+              Book a Free Consultation
+            </a>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+
         {/* Newsletter */}
-        <section id="contact" className="container pt-24 md:pt-32 pb-16 md:pb-20">
+        <section id="contact" className="container pt-6 md:pt-8 pb-16 md:pb-20">
           <div className="max-w-2xl mx-auto text-center">
             <span className="text-xs tracking-luxury uppercase text-primary mb-3 block">Stay Close</span>
             <h2 className="font-serif text-4xl md:text-5xl mb-6">

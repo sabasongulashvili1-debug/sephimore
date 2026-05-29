@@ -20,6 +20,7 @@ export const Footer = () => {
             <li>Rings | Solid investment pieces</li>
             <li>Pendants & Charms | Add pure value to any look</li>
             <li>Earrings | Stunning clarity, zero alloys</li>
+            <li>Redesign your existing gold | Give Gold a New Life </li>
           </ul>
         </div>
         <div>
@@ -34,7 +35,7 @@ export const Footer = () => {
       </div>
       <div className="border-t border-border/60">
         <div className="container py-6 text-xs text-muted-foreground flex flex-col md:flex-row justify-between gap-3">
-          <span>© {new Date().getFullYear()} Sephimère. All rights reserved.</span>
+          <span>© {new Date().getFullYear()}Vara Sephimère. All rights reserved.</span>
           <div className="flex gap-5">
             <Link href="/legal/privacy" className="hover:text-primary transition-colors">Privacy</Link>
             <Link href="/legal/terms" className="hover:text-primary transition-colors">Terms</Link>
