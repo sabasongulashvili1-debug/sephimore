@@ -26,7 +26,7 @@ export const AboutSection = () => {
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>Sephimère began with a single ring — slipped onto a finger and never taken off again. That feeling, of a piece becoming part of you, is the standard we hold every design to.</p>
             <p>Founded in 2019, the small atelier brought together master goldsmiths and stone-setters who have spent decades perfecting their craft. Every piece is made by hand in limited runs, with the same care once reserved for heirloom commissions.</p>
-            <p>In 2026 Mocatta, a three hundred fifty five year old iconic world bullion brand, (founded @1671 London, England) acquired Sephimère to expand its retail jewelry offering.</p>
+            <p>In 2026 Mocatta, a three hundred fifty five year old iconic world bullion brand, (founded @1671 London, England) acquired Sephimère to expand into retail jewelry offering.</p>
             <p>We believe jewelry should be intimate, not loud. Worn in the morning, in the shower, on a wedding day, on a quiet Tuesday. Made to outlast trends — and us.</p>
           </div>
 
