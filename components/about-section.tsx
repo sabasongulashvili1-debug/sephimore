@@ -26,18 +26,18 @@ export const AboutSection = () => {
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>Sephimère began with a single ring — slipped onto a finger and never taken off again. That feeling, of a piece becoming part of you, is the standard we hold every design to.</p>
             <p>Founded in 2019, the small atelier brought together master goldsmiths and stone-setters who have spent decades perfecting their craft. Every piece is made by hand in limited runs, with the same care once reserved for heirloom commissions.</p>
-            <p>In 2026 The Vara Jewelers family, active goldsmith jewlers in Sardinia since the early 1400's, acquired Sephimère to expand Và‧ra Jewelers</p>
+            <p>In 2026 Mocatta, a three hundred fifty five year old iconic world bullion brand, (founded @1671 London, England) acquired Sephimère to expand its retail jewelry offering.</p>
             <p>We believe jewelry should be intimate, not loud. Worn in the morning, in the shower, on a wedding day, on a quiet Tuesday. Made to outlast trends — and us.</p>
           </div>
 
           <div className={`overflow-hidden transition-all duration-500 ease-in-out ${aboutExpanded ? "max-h-[600px] mt-5" : "max-h-0"}`}>
             <div className="space-y-5 text-muted-foreground leading-relaxed">
-              <p>For too long, the jewellery industry has hidden massive markups behind brand prestige and marketing illusions. Vara Goldsmith Jewelers is changing that. By stripping away the noise, we treat bullion jewellery as what it truly should be: a beautiful, appreciating asset.</p>
-              <p><span className="text-foreground font-medium">Purity Without Compromise:</span> We work exclusively in 24K gold and pure 999 platinum. No alloys, no dilution — just pure, unadulterated precious metal.</p>
+              <p>For too long, the jewellery industry has hidden massive markups behind brand prestige and marketing illusions. Mocatta Jewelers is changing that. By stripping away the noise, we treat bullion jewellery as what it truly should be: a beautiful, appreciating asset.</p>
+              <p><span className="text-foreground font-medium">Purity Without Compromise:</span> We work exclusively in 24K gold and pure platinum. No alloys, no dilution — just pure, unadulterated precious metal.</p>
               <p><span className="text-foreground font-medium">Live Market Rates:</span> Every piece we sell is priced by the gram in real-time, tracking the current global market value. You buy according to the market, ensuring your jewellery acts as a true investment.</p>
-              <p><span className="text-foreground font-medium">Honest Craftsmanship:</span> While traditional retailers charge up to a 1,000% premium, we apply a single, honest fabrication fee to cover the artisan's work.</p>
+              <p><span className="text-foreground font-medium">Honest Craftsmanship:</span> While traditional retailers charge up to a 1,000% premium, we apply a single, honest fabrication fee to cover artistic craftsmanship.</p>
               <p><span className="text-foreground font-medium">A Full-Circle Investment:</span> Bullion you can wear, and liquidity you can trust. Enjoy your pieces today, and sell into the marketplace knowing what price to expect for your bullion jewelry.</p>
-              <p className="italic">Vara Goldsmith Jewelers delivers pure authenticity and fundamental investment value, merging the security of bullion with the beauty of bench-made craftsmanship.</p>
+              <p className="italic">Mocatta Goldsmith Jewelers delivers pure authenticity and fundamental investment value, merging the security of bullion with the beauty of bench-made craftsmanship.</p>
             </div>
           </div>
 

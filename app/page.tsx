@@ -12,12 +12,12 @@ import { SiteManifestWidget } from "@/components/SiteManifestWidget";
 import { AboutSection } from "@/components/about-section";
 
 export const metadata: Metadata = {
-  title: "Vara Sephimère — Fine Jewelry, Crafted to Treasure",
+  title: "Mocatta Sephimère — Fine Jewelry, Crafted to Treasure",
   description:
-    "Heirloom-quality fine jewelry. Discover handcrafted necklaces, rings, and earrings made to be worn every day.",
+    "Quietly luxurious. Endlessly wearable. Each piece is hand-finished in our atelier from solid gold or platinum and ethically sourced stones.",
   openGraph: {
-    title: "Vara Sephimère — Fine Jewelry, Crafted to Treasure",
-    description: "Heirloom-quality fine jewelry. Handcrafted necklaces, rings, and earrings.",
+    title: "Mocatta Sephimère — Fine Jewelry, Crafted to Treasure",
+      description: "Quietly luxurious. Endlessly wearable. Each piece is hand-finished in our atelier from solid gold or platinum and ethically sourced stones.",
     type: "website",
   },
 };
@@ -51,8 +51,7 @@ export default async function HomePage() {
               </h1>
                <SiteManifestWidget layout="banner" align="left" scale="1.2" border="false"/>
               <p className="text-muted-foreground max-w-md mb-10 leading-relaxed">
-                Quietly luxurious. Endlessly wearable. Each piece is hand-finished in our atelier
-                from solid gold and ethically sourced stones.
+                Quietly luxurious. Endlessly wearable. Each piece is hand-finished in our atelier from solid gold or platinum and ethically sourced stones.
               </p>
               <HomeClient />
             </div>
@@ -190,7 +189,7 @@ export default async function HomePage() {
                 { q: "Can I wear my pieces every day?", a: "Absolutely. Sephimère is designed for everyday wear — in the shower, swimming, sleeping. Solid gold and properly set stones are made for life." },
                 { q: "How long does shipping take?", a: "Most pieces ship within 2–3 business days. Made-to-order designs take 2–3 weeks. Worldwide shipping is complimentary on orders over $250." },
                 { q: "What if I need a different size?", a: "Free resizing within the first year on most rings. Just write to us — we'll send a prepaid label and return your piece resized in about two weeks." },
-                { q: "Do you offer repairs?", a: "Yes. Every Vara jewelry piece is backed by a lifetime craftsmanship guarantee. Cleaning and repair of manufacturing defects is always free." },
+                { q: "Do you offer repairs?", a: "Yes. Every Mocatta jewelry piece is backed by a lifetime craftsmanship guarantee. Cleaning and repair of manufacturing defects is always free." },
               ].map((f) => (
                 <details key={f.q} className="group py-6">
                   <summary className="flex items-center justify-between cursor-pointer list-none">
